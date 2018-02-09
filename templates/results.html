@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  
+<style>
+input.MyButton {
+width: 300px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+-moz-box-shadow:: 6px 6px 5px #999;
+-webkit-box-shadow:: 6px 6px 5px #999;
+box-shadow:: 6px 6px 5px #999;
+}
+input.MyButton:hover {
+color:#EE82EE;
+background: #000;
+border: 1px solid #fff;
+-moz-box-shadow:: 5px 5px 4px #adadad;
+-webkit-box-shadow:: 5px 5px 4px #adadad;
+box-shadow:: 5px 5px 4px #adadad;
+}
+body{
+     
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e9/Model_Engineering_College_Kochi_Top_view_03.JPG");
+   background-repeat: no-repeat;
+   background-size: cover ;
+  }
+ </style>
+
+<div class="container">
+<div class="row">
+
+<div class="jumbotron">
+  <h1>Hello {{request.user.username}}</h1>
+  <p>Here are all the available survey analysis graphs</p>
+  <h2> Main Subjects</h2>
+   <input class="MyButton" type="button" value="CS 601 DSP" onclick="window.location.href='/graph/database-example1'" /> 
+   <input class="MyButton" type="button" value="CS 602 CC" onclick="window.location.href='/survey/page'" /> 
+   <input class="MyButton" type="button" value="CS 603 OS " onclick="window.location.href='/survey/page'" /> 
+   <input class="MyButton" type="button" value="CS 604 CN " onclick="window.location.href='/survey/page'" /> 
+   <input class="MyButton" type="button" value="CS 605 MCS" onclick="window.location.href='/survey/page'" /> 
+   <input class="MyButton" type="button" value="CS 606 ELECTIVE I   " onclick="window.location.href='/survey/page'" />
+     <h2> Lab Subjects</h2>
+ 
+   <input class="MyButton" type="button" value="CS 607 SP LAB" onclick="window.location.href='/survey/page'" /> 
+   <input class="MyButton" type="button" value="CS 608 MINI PROJECT " onclick="window.location.href='/survey/page'" /> 
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <style>
+input.MyButton {
+width: 300px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+-moz-box-shadow:: 6px 6px 5px #999;
+-webkit-box-shadow:: 6px 6px 5px #999;
+box-shadow:: 6px 6px 5px #999;
+}
+input.MyButton:hover {
+color:#EE82EE;
+background: #000;
+border: 1px solid #fff;
+-moz-box-shadow:: 5px 5px 4px #adadad;
+-webkit-box-shadow:: 5px 5px 4px #adadad;
+box-shadow:: 5px 5px 4px #adadad;
+}
+body{
+     
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e9/Model_Engineering_College_Kochi_Top_view_03.JPG");
+   background-repeat: no-repeat;
+   background-size: cover ;
+  }
+ </style>
+	<title>FC-python wrapper</title>
+	{% load static %} 
+   <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+   <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+
+	<div id="chart-1">{{ output|safe }}</div>
+	<input class="MyButton" type="button" value="Next Question" onclick="window.location.href='/graph/database-example2/'" /> 
+{% endblock %}
+
+

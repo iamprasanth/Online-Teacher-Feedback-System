@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+
+   {% block content %}
+{% if form.errors %}
+<p>Your username already exists . Please try again with a unique username
+OR Don't leave the form blank </p>
+{% endif %}
+
+
+    <body>
+        
+                <table>    
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="loginmodal-container">
+                        <h1>Login to Your Account</h1><br>
+                        <form>
+                            <input type="text" name="user" placeholder="Username">
+                            <input type="password" name="pass" placeholder="Password">
+                            <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                        </form>					
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </nav>
+        </table>
+        <div>
+<form class="form-horizontal" action="" method="post" enctype="mutltipart/form-data">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Register for Online Feedback</legend>
+         {% csrf_token %}
+        {% for field in form %}
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="name">{{ field.label_tag }}</label>  
+          <div class="col-md-4">
+          {{ field}}
+          </div>
+        </div>
+        {% endfor %}
+        
+       
+        <!-- Button (Double) -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="save"></label>
+          <div class="col-md-8">
+            <button type="submit" id="save and Log in" name="save" class="btn btn-success">Save</button>
+      
+          </div>
+        </div>
+
+        </fieldset>
+        </form>
+
+{% endblock %}
+
+

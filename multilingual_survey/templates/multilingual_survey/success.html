@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+<div class="row">
+
+<div class="jumbotron">
+  <h1>Thank you {{request.user.username}} for your response !</h1>
+  <p>Your response has been forwarded to our server !</p>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-01 10:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: models.py:8
+msgid "Survey slug"
+msgstr "Slug du sondage"
+
+#: models.py:12
+msgid "Survey title"
+msgstr "Titre du sondage"
+
+#: models.py:32
+msgid "Survey"
+msgstr "Sondage"
+
+#: models.py:33
+msgid "Surveys"
+msgstr "Sondages"
+
+#: models.py:38
+msgid "Question slug"
+msgstr "Slug de la question"
+
+#: models.py:41
+msgid "Question text"
+msgstr "Texte de la question"
+
+#: models.py:61
+msgid "Question"
+msgstr "Question"
+
+#: models.py:62
+msgid "Questions"
+msgstr "Questions"
+
+#: models.py:69
+msgid "Choice text"
+msgstr "Texte du choice"
+
+#: models.py:83
+msgid "Choice"
+msgstr "Choix"
+
+#: models.py:84
+msgid "Choices"
+msgstr "Choix"
+
+#: models.py:91
+msgid "Name of user or identifier"
+msgstr "Nom de l'utilisateur ou identifiant"
+
+#: models.py:95
+msgid "Comments"
+msgstr "Commentaires"
+
+#: models.py:101
+msgid "Response unique identifier"
+msgstr "Identifiant unique de la réponse"
+
+#: models.py:110
+msgid "Response"
+msgstr "Retour"
+
+#: models.py:111
+msgid "Responses"
+msgstr "Retours"
+
+#: models.py:120
+msgid "Answer"
+msgstr "Réponse"
+
+#: models.py:121
+msgid "Answers"
+msgstr "Réponses"
+
+#: templates/admin/hvad/change_form.html:38
+#: templates/admin/hvad/change_form.html:40
+#: templates/admin/hvad/deletion_not_allowed.html:10
+#: templates/admin/hvad/includes/translation_tabs.html:6
+#: templates/admin/hvad/includes/translation_tabs.html:8
+msgid "Delete Translation"
+msgstr "Efface la traduction"
+
+#: templates/admin/hvad/deletion_not_allowed.html:6
+msgid "Home"
+msgstr "Accueil"
+
+#: templates/admin/hvad/deletion_not_allowed.html:15
+#, python-format
+msgid ""
+"Deletion of the %(language_name)s translation of %(object_name)s "
+"'%(escaped_object)s' is not allowed, because it is the last available "
+"translation of this instance."
+msgstr ""
+"La suppression de la traduction %(language_name)s pour %(object_name)s "
+"'%(escaped_object)s' n'est pas autorisée, car il s'agit de la dernière "
+"traduction disponible pour cette instance."
+
+#: templates/admin/hvad/edit_inline/stacked.html:10
+#: templates/admin/hvad/edit_inline/tabular.html:30
+msgid "View on site"
+msgstr "Voir sur le site"
+
+#: templates/admin/hvad/edit_inline/stacked.html:68
+#: templates/admin/hvad/edit_inline/tabular.html:115
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr "Ajouter un(e) nouveau(elle) %(verbose_name)s"
+
+#: templates/admin/hvad/edit_inline/stacked.html:71
+#: templates/admin/hvad/edit_inline/tabular.html:118
+msgid "Remove"
+msgstr "Supprimer"
+
+#: templates/admin/hvad/edit_inline/tabular.html:17
+msgid "Delete?"
+msgstr "Supprimer?"
