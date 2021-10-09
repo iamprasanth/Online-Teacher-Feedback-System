@@ -1,4 +1,4 @@
 # mini-project-v2.1
-An online teacher feedback system to be used by students to review teacher performances.
-Done as part of mini project using django framework.
+An online teacher feedback system developed using django framework for students to review teacher performances.
 Teacher feedback analysis can be viewed using pie graphs.
+Done as part of Bachelor's degrees academic mini project.
